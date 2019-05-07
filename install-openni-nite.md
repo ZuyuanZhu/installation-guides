@@ -64,4 +64,6 @@ tar xvf NiTE-Linux-x64-2.2.tar.bz2
 sudo ln -s $PWD/NiTE-Linux-x64-2.2/Redist/libNiTE2.so /usr/local/lib/  # $PWD should be /yourPathTo/NiTE-Linux-x64-2.2/..
 sudo ln -s $PWD/NiTE-Linux-x64-2.2/Include /usr/local/include/NiTE-Linux-x64-2.2  # $PWD should be /yourPathTo/NiTE-Linux-x64-2.2/..
 sudo ldconfig
+Set up udev rules for device access: sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/, then replug the Kinect.
+Run the test program: ./bin/Protonect
 ```
